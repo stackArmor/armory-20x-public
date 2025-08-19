@@ -1,1 +1,0 @@
-import{v as t,p as o,z as e}from"./chunk-C37GKA54-CG9TNitP.js";function s(){return[{title:"Dashboard"}]}const n=t(function(){return o.jsx(e,{to:"/dashboard",replace:!0})});export{n as default,s as meta};
