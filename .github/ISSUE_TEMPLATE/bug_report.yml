@@ -1,0 +1,72 @@
+name: Bug report
+description: Tell us what’s broken so we can fix it quickly.
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill this out. Keep it simple—we’ll do the heavy lifting.
+  - type: input
+    id: title
+    attributes:
+      label: Short title
+      description: One sentence that describes the problem.
+      placeholder: Example — Dashboard fails to load on Firefox
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the issue in plain language. What did you expect to happen instead?
+      placeholder: Describe the problem and the expected behavior.
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: How big is the impact?
+      options:
+        - Blocker — can’t use it at all
+        - High — major issue for many users
+        - Medium — inconvenient but there’s a workaround
+        - Low — minor issue or cosmetic
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to see the problem (if known)
+      description: Simple steps help us reproduce and fix faster.
+      placeholder: |
+        1. Go to …
+        2. Click …
+        3. See error …
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or files
+      description: Drag-and-drop any images or files that show the issue.
+  - type: input
+    id: url
+    attributes:
+      label: Where did this happen?
+      description: A link helps (e.g., dashboard page or doc).
+      placeholder: https://…
+  - type: input
+    id: environment
+    attributes:
+      label: Environment (if relevant)
+      description: Browser, OS, or tool version.
+      placeholder: e.g., Chrome 127 on Windows 11
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before you submit
+      options:
+        - label: I’ve checked for existing issues
+          required: true
+        - label: This report has no sensitive information
+          required: true

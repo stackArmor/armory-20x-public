@@ -1,0 +1,50 @@
+cso_name: The Armory 20x (Armory20x)
+csp_name: stackArmor
+description: 'Armory20x is delivered as SaaS offering using a multi-tenant Public
+    cloud computing environment.
+
+    It is available for workloads that are targeting the FedRAMP 20x pathway to authorization
+    and wish to deploy and leverage The Armory: FR2513256853 to meet FedRAMP 20x security
+    requirements and report on the status of Key Security Indicators (KSIs) as defined
+    by the FedRAMP KSI standard.
+
+    '
+fedramp_package_id: null
+fips_199_level: 20x Low
+iac_project_id: 23
+name: fr20x
+notes: 'This object declares the FedRAMP 20x tenant system attributes.
+
+    '
+scopes:
+-   description: Staging project ID for the fedramp 20x tenant
+    name: armory-fr20x-staging
+    notes: 'This is an example GCP project ID for fr20x. It is used to demonstrate
+        how to structure a scope in a system declaration YAML file.
+
+        '
+-   description: Production project ID for the fedramp 20x tenant
+    name: armory-fr20x-prod
+-   description: Core IAC project ID for the fedramp 20x tenant
+    name: armory-fr20x-iac-core-0
+-   description: Core security project ID for the Armory
+    name: armory-prod-sec-core-0
+-   description: Network security project ID for the Armory
+    name: armory-net-prod-spoke-0
+-   description: Network landing zone project ID for the Armory
+    name: armory-net-prod-landing-0
+-   description: GSS prod project ID for the Armory
+    name: armory-gss-prod
+-   description: Core IAC project ID for the Armory
+    name: armory-prod-iac-core-0
+-   description: Audit logs project ID for the Armory
+    name: armory-prod-audit-logs-0
+-   description: GSS Panorama scan scope for the Armory
+    name: gss-panorama
+-   description: GSS PAN-OS 11 scan scope for the Armory
+    name: gss-panos11
+-   description: GSS RHEL 8 scan scope for the Armory
+    name: gss-prod-rhel8
+-   description: FR20x RHEL 8 scan scope for the Armory
+    name: fr20x-prod-rhel8
+service_model: Software as a Service (SaaS)

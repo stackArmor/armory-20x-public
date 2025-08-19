@@ -1,0 +1,59 @@
+name: Feature request
+description: Share an idea or request that would make this better.
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea! Keep it short and clear—no technical wording needed.
+  - type: input
+    id: title
+    attributes:
+      label: Short title
+      description: One sentence that describes your idea.
+      placeholder: Example — Add a filter to see only failed KSIs
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: What’s hard or confusing right now?
+      placeholder: Explain the challenge in your own words.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+      description: Describe the change or new capability.
+      placeholder: A simple description of the feature or outcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: value
+    attributes:
+      label: How valuable would this be?
+      options:
+        - High — helps many people often
+        - Medium — useful in some cases
+        - Low — nice to have
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: How will we know it worked?
+      description: What result or behavior would make this a win?
+      placeholder: Describe the success criteria.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before you submit
+      options:
+        - label: I’ve checked for existing issues and discussions
+          required: true
+        - label: This request has no sensitive information
+          required: true
