@@ -1,0 +1,12 @@
+{
+  "fedramp20x": {
+    "github.com/turbot/steampipe-mod-gcp-compliance": {
+      "version": "1.2.2",
+      "name": "github.com/turbot/steampipe-mod-gcp-compliance",
+      "commit": "013e3870e8410c96f8deabdf9a4f53d5110945e8",
+      "git_ref": "refs/tags/v1.2.2",
+      "struct_version": 20240429,
+      "alias": "gcp_compliance"
+    }
+  }
+}
